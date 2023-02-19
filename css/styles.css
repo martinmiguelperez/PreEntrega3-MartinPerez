@@ -32,7 +32,7 @@ header {
 body {
   background-image: radial-gradient(circle, #fcfcfc, #ffffff);
   color: #000;
-  font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
 }
 
 /* ======FIN BODY====== */
@@ -154,11 +154,18 @@ body {
   margin: auto;
 }
 
+.cuerpo p{
+  color: rgb(248, 248, 248);
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1rem;
+  font-family: 'Roboto Slab', serif;
+}
+
 h1.tituloCard {
   font-size: 2rem;
   font-weight: 800;
   line-height: 2rem;
-  font-family: 'Roboto Slab', serif;
   color: #0086FF;
   text-shadow:0 1px #011c34, 1.1px 0 #034580;
 }
@@ -170,7 +177,6 @@ margin-bottom: 1rem;
 font-size: 1.5rem;
 font-weight: 800;
 line-height: 1.2rem;
-font-family: 'Roboto Slab', serif;
 color: #0086FF;
 text-shadow:0 1px #010e1a, 1.1px 0 #022849;
 }
@@ -199,10 +205,12 @@ text-shadow:0 1px #010e1a, 1.1px 0 #022849;
 button.btn.btnCardComprar{
   text-decoration: none;
 }
+
 button.btn.btnCardComprar:first-of-type {
   background: #008AFF;
   color: white;
 }
+
 button.btn.btnCardComprar:hover{
   background: #156bb7;
   color: rgb(1, 1, 1);
