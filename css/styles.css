@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;800&display=swap');
+
+/* ======GENERAL====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ======FIN GENERAL====== */
+
+
+/* ======NAVBAR====== */
+header {
+  box-shadow: 2px 2px 15px #464848;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+/* ======FIN NAVBAR====== */
+
+
+/* ======FOOTER====== */
+.Footer {
+  text-align: center;
+  background-color: #363636;
+  color: rgb(216, 211, 211);
+  box-shadow: 0px 2px 10px 5px #727171;
+}
+
+.FondoCopy {
+  background-color: rgba(0, 0, 0, 0.78);
+  box-shadow: 0px 2px 10px 5px #383838;
+}
+
+/* ======FIN NAVBAR====== */
+
+/* ======BODY====== */
+body {
+  background-image: radial-gradient(circle, #fcfcfc, #ffffff);
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ======FIN BODY====== */
+
+/* ======MAIN====== */
+.contenedor {
+  width: 90%;
+  max-width: 95%;
+  margin: 50px auto;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    "filtros filtros filtros"
+    "contenido contenido contenido"
+    "sidebar sidebar sidebar"
+    "widget-1 widget-2 widget-3";
+}
+
+.contenedor>div,
+.contenedor .filtros,
+.contenedor .contenido,
+.contenedor .sidebar {
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.contenedor .filtros {
+  background: #12203E;
+  color: #fff;
+  grid-area: filtros;
+}
+
+.contenedor .contenido {
+  grid-area: contenido;
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.contenedor .sidebar {
+  grid-column: 3 / 4;
+  background: #fAA43D;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  grid-area: sidebar;
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2,
+.contenedor .widget-3 {
+  background: #55a8fd;
+  color: #fff;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor .widget-1 {
+  grid-area: widget-1;
+}
+
+.contenedor .widget-2 {
+  grid-area: widget-2;
+}
+
+.contenedor .widget-3 {
+  grid-area: widget-3;
+}
+
+/* ======FIN MAIN====== */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+      "filtros filtros"
+      "contenido contenido"
+      "sidebar sidebar"
+      "widget-1 widget-1"
+      "widget-2 widget-3";
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contenedor {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+      "filtros"
+      "contenido"
+      "sidebar"
+      "widget-1"
+      "widget-2"
+      "widget-3";
+  }
+}
+
+/* ======CARD====== */
+
+.contenido .card {
+  box-shadow: 1px 5px 3px 3px rgba(211, 211, 211, 0.3);
+  background: rgba(241, 240, 240, 0.699);
+  width: 350px;
+  border-radius: 30px;
+  border: #dbdee3 solid 1px;
+}
+
+.contenido .card:hover {
+  transition: .1s ease-in;
+  box-shadow: 10px 10px 10px rgba(135, 134, 134, 0.519);
+}
+
+.contenido .card .card-image {
+  text-align: center;
+  object-fit: cover;
+  width: 100%;
+}
+
+.contenido .card .card-name {
+  text-align: center;
+  font-size: 35px;
+  color: #16171c;
+  padding: 15px;
+  text-decoration: underline;
+}
+
+.contenido .card .card-price {
+  text-align: center;
+  color: red;
+  font-size: 40px;
+}
+.contenido .card .card-price h2{
+  text-shadow: 1.5px 1px 3px rgb(244, 0, 0);
+}
+
+.contenido .card .card-button {
+  text-align: center;
+  font-size: 25px;
+  padding: 15px;
+}
+.contenido .card .card-button button {
+  text-align: center;
+  font-size: 25px;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 15px;
+  padding: 15px 40px;
+  margin: 10px auto;
+}
+
+.contenido .card .card-text {
+  text-align: center;
+  font-size: 20px;
+  color: #000;
+  padding: 15px;
+}
