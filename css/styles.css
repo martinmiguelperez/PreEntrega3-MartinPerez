@@ -288,16 +288,20 @@ text-shadow:0 1px #010e1a, 1.1px 0 #022849;
 .btnCardComprar {
   display: inline-block;
   background: #008AFF;
-  margin-right: 4px;
-  padding: 14px;
+  margin: auto;
+  padding: 14px 50px;
   border-radius: 10px;
-  margin-top: 18px;
+  margin-top: 30px;
   font-size: 1.2rem;
 }
-button.btnCardComprar{
+button.btn.btnCardComprar{
    text-decoration: none;
 }
-button.btnCardComprar:first-of-type {
+button.btn.btnCardComprar:first-of-type {
    background: #008AFF;
    color: white;
+}
+button.btn.btnCardComprar:hover{
+  background: #156bb7;
+  color: rgb(1, 1, 1);
 }
