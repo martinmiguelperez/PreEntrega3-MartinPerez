@@ -7,8 +7,6 @@
   box-sizing: border-box;
 }
 
-/* ======FIN GENERAL====== */
-
 
 /* ======NAVBAR====== */
 header {
@@ -16,9 +14,6 @@ header {
   font-weight: 500;
   letter-spacing: 0.1em;
 }
-
-/* ======FIN NAVBAR====== */
-
 
 /* ======FOOTER====== */
 .Footer {
@@ -32,8 +27,6 @@ header {
   background-color: rgba(0, 0, 0, 0.78);
   box-shadow: 0px 2px 10px 5px #383838;
 }
-
-/* ======FIN NAVBAR====== */
 
 /* ======BODY====== */
 body {
@@ -120,8 +113,102 @@ body {
   grid-area: widget-3;
 }
 
-/* ======FIN MAIN====== */
+/* ======FIN MEDIA====== */
 
+/* ======CARD====== */
+.tarjeta {
+  max-width: 65vw;
+  text-align: center;
+  height: auto;
+  margin: 1px auto;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.tarjeta:hover{
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.209);
+    transform: translateY(-0.1);
+  }
+  
+  .contenidosCard {
+    display: flex; 
+  }
+
+.ladoIzq, .ladoDer {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: auto;
+}
+
+.ladoDer img {
+  border-style: none;
+}
+
+.ladoIzq {
+  background: black;
+  color: white;
+  padding: 48px;
+  margin: auto;
+}
+
+h1.tituloCard {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 2rem;
+  font-family: 'Roboto Slab', serif;
+  color: #0086FF;
+  text-shadow:0 1px #011c34, 1.1px 0 #034580;
+}
+
+h1.tituloTotal{
+margin-top: 2rem;
+margin-bottom: 1em;
+margin-bottom: 1rem;
+font-size: 1.5rem;
+font-weight: 800;
+line-height: 1.2rem;
+font-family: 'Roboto Slab', serif;
+color: #0086FF;
+text-shadow:0 1px #010e1a, 1.1px 0 #022849;
+}
+
+h2.tituloPrecio{
+margin-top: 1rem;
+margin-bottom: 1.5rem;
+font-size: 1.5rem;
+font-weight: 800;
+line-height: 1.2rem;
+font-family: 'Roboto Slab', serif;
+color: #ff2f00;
+text-shadow:0 1px #010e1a, 1.1px 0 #022849;
+}
+
+.btnCardComprar {
+  display: inline-block;
+  background: #008AFF;
+  margin: auto;
+  padding: 14px 50px;
+  border-radius: 10px;
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+
+button.btn.btnCardComprar{
+  text-decoration: none;
+}
+button.btn.btnCardComprar:first-of-type {
+  background: #008AFF;
+  color: white;
+}
+button.btn.btnCardComprar:hover{
+  background: #156bb7;
+  color: rgb(1, 1, 1);
+}
+
+/* ======MEDIA====== */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .contenedor {
     grid-template-columns: repeat(2, 1fr);
@@ -156,152 +243,4 @@ body {
     .tarjeta {
      max-width: 95vw;
     }
-}
-
-/* ======CARD====== */
-
-/* .contenido .card {
-  box-shadow: 1px 5px 3px 3px rgba(211, 211, 211, 0.3);
-  background: rgba(241, 240, 240, 0.699);
-  width: 350px;
-  border-radius: 30px;
-  border: #dbdee3 solid 1px;
-}
-
-.contenido .card:hover {
-  transition: .1s ease-in;
-  box-shadow: 10px 10px 10px rgba(135, 134, 134, 0.519);
-}
-
-.contenido .card .card-image {
-  text-align: center;
-  object-fit: cover;
-  width: 100%;
-}
-
-.contenido .card .card-name {
-  text-align: center;
-  font-size: 35px;
-  color: #16171c;
-  padding: 15px;
-  text-decoration: underline;
-}
-
-.contenido .card .card-price {
-  text-align: center;
-  color: red;
-  font-size: 40px;
-}
-.contenido .card .card-price h2{
-  text-shadow: 1.5px 1px 3px rgb(244, 0, 0);
-}
-
-.contenido .card .card-button {
-  text-align: center;
-  font-size: 25px;
-  padding: 15px;
-}
-.contenido .card .card-button button {
-  text-align: center;
-  font-size: 25px;
-  color: #ffffff;
-  background-color: #000000;
-  border-radius: 15px;
-  padding: 15px 40px;
-  margin: 10px auto;
-}
-
-.contenido .card .card-text {
-  text-align: center;
-  font-size: 20px;
-  color: #000;
-  padding: 15px;
-}
- */
-
-
-
-/* ============================================ */
-
-.tarjeta {
-  max-width: 65vw;
-  text-align: center;
-  height: auto;
-  margin: 1px auto;
-  display: block;
-  border-radius: 10px;
-  border: 1px solid black;
-  overflow: hidden;
-}
-.tarjeta:hover{
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.209);
-    transform: translateY(-0.1);
-}
-.contenidosCard {
-  display: flex; 
-}
-.ladoIzq, .ladoDer {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  margin: auto;
-}
-.ladoDer img {
-  border-style: none;
-}
-.ladoIzq {
-  background: black;
-  color: white;
-  padding: 48px;
-  margin: auto;
-}
-h1.tituloCard {
-  font-size: 2rem;
-  font-weight: 800;
-  line-height: 2rem;
-  font-family: 'Roboto Slab', serif;
-  color: #0086FF;
-  text-shadow:0 1px #011c34, 1.1px 0 #034580;
-}
-h1.tituloTotal{
-margin-top: 2rem;
-margin-bottom: 1em;
-margin-bottom: 1rem;
-font-size: 1.5rem;
-font-weight: 800;
-line-height: 1.2rem;
-font-family: 'Roboto Slab', serif;
-color: #0086FF;
-text-shadow:0 1px #010e1a, 1.1px 0 #022849;
-}
-
-h2.tituloPrecio{
-margin-top: 1rem;
-margin-bottom: 1.5rem;
-font-size: 1.5rem;
-font-weight: 800;
-line-height: 1.2rem;
-font-family: 'Roboto Slab', serif;
-color: #ff2f00;
-text-shadow:0 1px #010e1a, 1.1px 0 #022849;
-}
-.btnCardComprar {
-  display: inline-block;
-  background: #008AFF;
-  margin: auto;
-  padding: 14px 50px;
-  border-radius: 10px;
-  margin-top: 30px;
-  font-size: 1.2rem;
-}
-button.btn.btnCardComprar{
-   text-decoration: none;
-}
-button.btn.btnCardComprar:first-of-type {
-   background: #008AFF;
-   color: white;
-}
-button.btn.btnCardComprar:hover{
-  background: #156bb7;
-  color: rgb(1, 1, 1);
 }
