@@ -14,6 +14,9 @@ header {
   font-weight: 500;
   letter-spacing: 0.1em;
 }
+.navbar-item.active{
+  text-decoration: underline rgb(163, 161, 161);
+}
 
 /* ======FOOTER====== */
 .Footer {
@@ -103,14 +106,17 @@ font-family: 'Roboto Slab', serif;
 
 .contenedor .widget-1 {
   grid-area: widget-1;
+  color:#000
 }
 
 .contenedor .widget-2 {
   grid-area: widget-2;
+  background: none;
 }
 
 .contenedor .widget-3 {
   grid-area: widget-3;
+  color:#000
 }
 
 /* ======FIN MEDIA====== */
