@@ -9,11 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name=”distribution” content=”global” />
     <link rel="shortcut icon" href="images/favicon1.png" type="image/x-icon">
-    <title>Proyecto Final + Martin Perez</title>
+    <title>PreEntrega3 + Martin Perez</title>
     <link rel="icon" href="images/favicon1.png" type="favicon.png">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bulma.css">
-    <script defer src="js/javascript.js"></script>
 
 </head>
 
@@ -46,7 +45,7 @@
                 <div class="navbar-st">
                         <a href="carrito.html">
                             <figure class="">
-                                <img class="imgComprar" src="images/botonCompra2.png" alt="Comprar ahora" title="Carrito" >
+                                <img class="imgComprar" src="images/botonCompra2.png" alt="Comprar ahora" title="Carrito" id="imgCarritoCooltra">
                             </figure>
                         </a>
                 </div>
@@ -56,31 +55,18 @@
 
     <main class="contenedor">
 
+<!-- FILTROS -->
         <div class="filtros">
-            <h2>FILTROS</h2>
+            <input class="input is-rounded" list="ultimasBusquedas" id="inputSearch" type="search" placeholder="Tipo de vehiculo">
         </div>
-
+<!-- CARDS -->
         <div class="contenido">
 
-            <div class="tarjeta">
-                <div class="contenidosCard">
-                    <div class="ladoIzq">
-                        <h1 class="tituloCard">Peugeot Tweet</h1>
-                        <h2 class="tituloPrecio">185€ x Mes</h2>
-                        <div class="cuerpo">
-                            <p>Urbana
-                                | 125cc</p>
-                        </div>
-                        <button type="button" class="btn btnCardComprar" id="" title="Añadir Carrito"><h3>AÑADIR</h3></button>
-                    </div>
-                    <div class="ladoDer">
-                        <img src="images/motos1.jpg" alt="" />
-                    </div>
-                </div>
-            </div>
+            <section id="containerCard">
+            </section>
 
         </div>
-
+<!-- INFO -->
         <div class="widget-1">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusantium maiores id sunt, nam sit
                 debitis sapiente aspernatur fugit voluptates.</p>
@@ -94,7 +80,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusantium maiores id sunt, nam sit
                 debitis sapiente aspernatur fugit voluptates.</p>
         </div>
-
+<!-- FIN INFO -->
     </main>
 
     <footer class="Footer">
@@ -103,10 +89,14 @@
             <h6>Comisión JavaScript: 39455</h6>
         </div>
         <div class="FondoCopy">
-            &copy; Copyright 2023 | Todos los derechos reservados | Martín Miguel Pérez
+            &copy; Copyright 2023 | Todos los derechos reservados.
         </div>
         </div>
     </footer>
+    <script src="js/class.compra.js"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/dom.js"></script>
 </body>
 
 </html>
