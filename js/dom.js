@@ -7,19 +7,19 @@ const inputSearch = document.querySelector("input#inputSearch")
 document.addEventListener('DOMContentLoaded', () => {
 
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-    $navbarBurgers.forEach( el => {
-      el.addEventListener('click', () => {
-        const target = el.dataset.target;
-        const $target = document.getElementById(target);
-        el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
-  
-      });
+    $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+        });
     });
-  });
+});
 
 
-imgCarrito.addEventListener("mousemove", ()=> {
+imgCarrito.addEventListener("mousemove", () => {
     let totalProductos = carritoCooltra.length
     imgCarrito.title = `${totalProductos} productos en el carrito`
 })
@@ -32,6 +32,8 @@ function cargarProductos(array) {
             contenido += retornoCard(vehiculo)
         })
         conteiner.innerHTML = contenido
+    } else {
+        contenido = "<h2 class='error-cards'>Error al cargar productos.</h2>"
     }
 }
 cargarProductos(vehiculos)

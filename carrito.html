@@ -8,11 +8,11 @@
     <meta name="copyright" content="Martín Miguel Pérez" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name=”distribution” content=”global” />
-    <link rel="shortcut icon" href="images/favicon1.png" type="image/x-icon">
     <title>Proyecto Final + Martin Perez</title>
+    <link rel="shortcut icon" href="images/favicon1.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bulma.css">
-    <script defer src="js/javascript.js"></script>
+
 
 </head>
 
@@ -43,11 +43,11 @@
                     </a>
                 </div>
                 <div class="navbar-st">
-                        <a href="carrito.html">
-                            <figure class="">
-                                <img class="imgComprar" src="images/botonCompra2.png" alt="Comprar ahora" title="Carrito" >
-                            </figure>
-                        </a>
+                    <a href="carrito.html">
+                        <figure class="">
+                            <img class="imgComprar" src="images/botonCompra2.png" alt="Comprar ahora" title="Carrito">
+                        </figure>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -55,20 +55,77 @@
 
     <main class="contenedorCarrito">
 
+        <div class="tablaCompra">
+            <table>
+                <thead>
+                    <tr>
+                        <th id="tablehead">Nombre</th>
+                        <th id="tablehead">Tipo</th>
+                        <th id="tablehead">Cilindrada</th>
+                        <th id="tablehead">Importe</th>
+                        <th id="tablehead">Quitar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>No</td>
+                        <td>hay</td>
+                        <td>productos</td>
+                        <td>en el</td>
+                        <td>carrito</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
         <div class="formularioDatos">
-            <h3>FORMULARIO DATOS</h3>
+            <div class="field">
+                <label class="label">NOMBRE</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Ej: Alex">
+                </div>
+                <label class="label">APELLIDO</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Ej: Smith">
+                </div>
+                <label class="label">DNI</label>
+                <div class="control">
+                    <input class="input" type="number" placeholder="Ej: 11000555">
+                </div>
+                <label class="label">NACIONALIDAD</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Ej: Argentina">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        Acepto <a href="#">Términos y Condiciones</a>
+                    </label>
+                </div>
+            </div>
         </div>
 
         <aside class="formularioDireccion">
-            <h3>FORMULARIO DIRECCION</h3>
+            <div class="field">
+                <label class="label">DIRECCIÓN</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Ej: Avenida Siempreviva 742">
+                </div>
+                <label class="label">CIUDAD</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Ej: Valencia">
+                </div>
+                <label class="label">PAIS DE RESIDENCIA</label>
+                <div class="control">
+                    <input class="input" type="text" placeholder="Ej: España">
+                </div>
+            </div>
         </aside>
-
-        <div class="tablaCompra">
-            <h3>TABLA COMPRAS</h3>
-        </div>
-
         <div class="botonCompra">
-            <h3>BOTON COMPRA</h3>
+            <button class="button is-danger is-outlined ConfigBotonComprar">VACIAR</button>
+            <button class="button is-info is-outlined ConfigBotonComprar">COMPRAR</button>
         </div>
 
     </main>
@@ -83,6 +140,11 @@
         </div>
         </div>
     </footer>
+    <script src="js/class.compra.js"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/carrito.js"></script>
+    <script src="js/dom.js"></script>
 </body>
 
 </html>

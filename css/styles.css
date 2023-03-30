@@ -7,6 +7,7 @@
   box-sizing: border-box;
 }
 
+
 /* ======NAVBAR====== */
 header {
   box-shadow: 2px 2px 15px #464848;
@@ -35,7 +36,11 @@ header {
 body {
   background-image: radial-gradient(circle, #fcfcfc, #ffffff);
   color: #000;
-  font-family: 'Roboto Slab', serif;
+}
+
+main{
+    font-family: 'Roboto Slab', serif;
+
 }
 
 /* ======MAIN INDEX====== */
@@ -62,7 +67,6 @@ body {
 }
 
 .contenedor .filtros {
-
   background: #12203E;
   color: #fff;
   grid-area: filtros;
@@ -130,26 +134,43 @@ body {
 }
 
 .contenedorCarrito .tablaCompra {
-  background: #12203E;
-  color: #fff;
+  color: #2c2b2b;
+  font-weight: 500;
   grid-area: tablaCompra;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100px;
 }
 
 .contenedorCarrito .formularioDatos {
-  background: #5f7dc0;
-  color: #fff;
+  background: #dcdde165;
+  color: #000000;
   grid-area: formularioDatos;
   gap: 40px;
   text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 100px;
+  justify-content: start;
+}
+.contenedorCarrito .formularioDireccion {
+  background: #dcdde165;
+  color: #000000;
+  grid-area: formularioDireccion;
+  gap: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+.field{
+  width: 90%;
+  margin: 1px;
+}
+.control{
+  padding: 7px;
 }
 
 a figure img.imgComprar {
@@ -166,27 +187,58 @@ a figure img.imgComprar:hover {
   border-radius: 10px;
 }
 
-.contenedorCarrito .formularioDireccion {
-  background: #021745;
-  color: #fff;
-  grid-area: formularioDireccion;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100px;
-}
+
 
 .contenedorCarrito .botonCompra {
-  background: #ef9905;
   color: #fff;
   grid-area: botonCompra;
-  text-align: center;
   display: flex;
+  flex-direction: row;
+  text-align: center;
   align-items: center;
-  justify-content: center;
+  justify-content:space-evenly;
 }
 
+.ConfigBotonComprar{
+  width: 50%;
+  margin: 10px;
+
+}
+
+
+/* ======TABLA====== */
+
+table{
+  margin: auto;
+  width: 100%;
+  margin-bottom: 10px;
+
+}
+thead tr {
+  background-color: #0088ff;
+}
+
+tbody tr td{
+font-size: 1.1rem;
+}
+
+#tablehead {
+  padding: 15px;
+}
+
+tbody tr:nth-child(even) {
+  background: #0710181c !important;
+  
+}
+
+.button-delete {
+  font-size: small;
+  border-radius: 1px;
+  border: solid 0.5px rgb(81, 79, 79);
+}
+.button-delete:hover {
+  background-color: rgba(255, 100, 100, 0.674) !important;
+}
 
 /* ======CARD====== */
 .tarjeta {
@@ -234,7 +286,6 @@ a figure img.imgComprar:hover {
   font-size: 1.5rem;
   font-weight: 800;
   line-height: 1rem;
-  font-family: 'Roboto Slab', serif;
 }
 
 h1.tituloCard {
@@ -262,7 +313,6 @@ h2.tituloPrecio {
   font-size: 1.5rem;
   font-weight: 800;
   line-height: 1.2rem;
-  font-family: 'Roboto Slab', serif;
   color: #ff2f00;
   text-shadow: 0 1px #010e1a, 1.1px 0 #022849;
 }
@@ -286,7 +336,6 @@ button.btn.btnCardComprar:first-of-type {
   color: rgb(0, 0, 0);
   font-weight: 800;
   line-height: 1rem;
-  font-family: 'Roboto Slab', serif;
 }
 
 button.btn.btnCardComprar:hover {

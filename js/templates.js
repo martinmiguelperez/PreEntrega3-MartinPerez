@@ -25,7 +25,6 @@ function armarTablaCarrito(vehiculo) {
                 <tr>
                     <td class="">${vehiculo.nombre}</td>
                     <td>${vehiculo.tipo}</td>
-                    <td>${vehiculo.modelo}</td>
                     <td>${vehiculo.cilindrada}</td>
                     <td>${vehiculo.precio} €</td>
                     <td><button type="button" class="delete is-medium button-delete" id="${vehiculo.id}" title="Quitar del carrito"></button></td>
