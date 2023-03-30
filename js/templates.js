@@ -10,7 +10,7 @@ function retornoCard(vehiculo) {
                 <div class="cuerpo">
                     <p>${vehiculo.tipo} || ${vehiculo.cilindrada} </p>
                 </div>
-                    <button  type="button" class="btn btnCardComprar" id="${vehiculo.id}" title="Click para agregar '${vehiculo.nombre}' al carrito">Comprar</button>
+                    <button  type="button" class="btn btnCardComprar" id="${vehiculo.id}" title="Click para agregar '${vehiculo.nombre}' al carrito">Añadir</button>
             </div>
             <div class="ladoDer">
                 <img src="${vehiculo.images}" alt="${vehiculo.nombre}" />
