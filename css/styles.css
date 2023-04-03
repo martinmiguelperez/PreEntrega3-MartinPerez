@@ -40,14 +40,14 @@ body {
 
 main{
     font-family: 'Roboto Slab', serif;
-
 }
+
 
 /* ======MAIN INDEX====== */
 .contenedor {
   width: 90%;
   max-width: 95%;
-  margin: 45px auto;
+  margin: 80px auto;
   display: grid;
   grid-gap: 15px;
   grid-template-columns: repeat(3, 1fr);
@@ -67,10 +67,17 @@ main{
 }
 
 .contenedor .filtros {
-  background: #12203E;
+  background: #0069bf;
   color: #fff;
   grid-area: filtros;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
+input.is-rounded{
+  width: 50%;
+}
+
 
 .contenedor .contenido {
   grid-area: contenido;
@@ -112,7 +119,7 @@ main{
 .contenedorCarrito {
   width: 90%;
   max-width: 95%;
-  margin: 50px auto;
+  margin: 80px auto;
   display: grid;
   grid-gap: 15px;
   grid-template-columns: repeat(2, 1fr);
@@ -120,15 +127,16 @@ main{
   grid-template-areas:
     "tablaCompra tablaCompra"
     "formularioDatos formularioDireccion"
-    "formularioDatos formularioDireccion"
+    "formularioDatos totalCarrito"
     "formularioDatos botonCompra";
 }
-
+totalCarrito
 .contenedorCarrito>div,
 .contenedorCarrito .tablaCompra,
 .contenedorCarrito .formularioDatos,
 .contenedorCarrito .formularioDireccion,
-.contenedorCarrito .botonCompra {
+.contenedorCarrito .botonCompra,
+.contenedorCarrito .totalCarrito {
   padding: 20px;
   border-radius: 4px;
 }
@@ -140,6 +148,14 @@ main{
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.contenedorCarrito .totalCarrito {
+  background-color: #0088ff11;
+  grid-area: totalCarrito;
+  text-align: center;
+  display: flex;
   justify-content: center;
 }
 
@@ -317,6 +333,13 @@ h2.tituloPrecio {
   text-shadow: 0 1px #010e1a, 1.1px 0 #022849;
 }
 
+h4.TotalCarrito{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #0086FF;
+  text-shadow: 0 1px #010e1a, 1.1px 0 #929598;
+}
+
 .btnCardComprar {
   display: inline-block;
   background: #008AFF;
@@ -363,7 +386,7 @@ button.btn.btnCardComprar:hover {
       "tablaCompra tablaCompra"
       "formularioDatos formularioDireccion"
       "formularioDatos formularioDireccion"
-      "formularioDatos formularioDireccion"
+      "formularioDatos totalCarrito"
       "formularioDatos botonCompra";
   }
 }
@@ -383,11 +406,12 @@ button.btn.btnCardComprar:hover {
 
   .contenedorCarrito {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
     grid-template-areas:
       "tablaCompra"
-      "formularioDatos"
       "formularioDireccion"
+      "formularioDatos"
+      "totalCarrito"
       "botonCompra";
   }
 }
